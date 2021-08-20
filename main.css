@@ -1,0 +1,163 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  background: url(./images/pattern-background-desktop.svg) no-repeat center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  min-height: 550px;
+  margin: 0px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.card {
+  position: relative;
+  left: 50%;
+  width: min-content;
+  height: fit-content;
+  box-sizing: border-box;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 12px 43px var(--Pale-blue);
+
+  color: var(--Dark-blue);
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.content {
+  padding: 10px 42px 10px 42px;
+}
+
+.content h1 {
+  color: var(--Dark-blue);
+}
+
+.content p {
+  color: var(--Desaturated-blue);
+}
+
+.plan {
+  display: inline-flex;
+  width: -webkit-fill-available;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.plan a {
+  color: var(--Bright-blue);
+  font-weight: 700;
+}
+
+.plan a:hover {
+  color: var(--Dark-blue);
+}
+
+.pricing {
+  margin-right: auto;
+  margin-left: 15px;
+  color: var(--Desaturated-blue);
+  text-align: left;
+}
+
+.pricing h6 {
+  padding-bottom: 5px;
+  margin: 0;
+  color: var(--Dark-blue);
+  font-size: medium;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.card > img {
+  width: -webkit-fill-available;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.pay {
+  width: 100%;
+  height: 50px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: var(--Bright-blue);
+  border-radius: 10px;
+  box-shadow: 0px 12px 43px var(--Pale-blue);
+  color: var(--Very-pale-blue);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pay:hover {
+  background-color: var(--Dark-blue);
+}
+
+.cancel {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  color: var(--Desaturated-blue);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cancel:hover {
+  color: black;
+}
+
+.buttons {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .content {
+    padding: 10px 30px 10px 30px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .plan a {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 90%;
+  }
+}
