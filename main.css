@@ -9,6 +9,7 @@
 html {
   background: url(./images/pattern-background-desktop.svg) no-repeat center
     fixed;
+  background-color: var(--Pale-blue);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
